@@ -1,0 +1,486 @@
+/* Body */
+
+* {
+    padding: 0%;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: none;
+}
+
+body {
+    font-family: 'Helvetica';
+    background-color: #ffffff;
+}
+
+.bg-putih {
+    background-color: #F1F3FF;
+}
+
+
+/* Body */
+
+
+/* Navigation-bar */
+
+.navbar {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.navigasi {
+    padding-left: 2px;
+}
+
+.navigasi button {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    margin: 0px 8px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.nav-link {
+    color: #000000;
+}
+
+.btn-ijo {
+    color: white;
+    background-color: #5CB85F;
+    border-radius: 3px;
+}
+
+
+/* Navigation-bar */
+
+
+/* Header */
+
+.section {
+    background-color: #F1F3FF;
+    width: 100%;
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+    padding-right: 0px;
+}
+
+.pembuka {
+    display: flex;
+    padding-right: 0px;
+}
+
+.pembuka img {
+    margin-top: 50px;
+    padding-right: 0px;
+}
+
+.bio {
+    font-size: 36px;
+    margin-top: 120px;
+    margin-left: 91px;
+    margin-right: 0px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.bio button {
+    margin-top: 20px;
+}
+
+.ucapan {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+
+/* Header */
+
+
+/* Our Services */
+
+.service {
+    display: flex;
+}
+
+.service img {
+    margin-top: 120px;
+    margin-left: 150px;
+}
+
+.bio2 {
+    margin-top: 180px;
+    justify-content: flex-end;
+    padding: 0px;
+    margin-right: 0px;
+}
+
+.bio2 img {
+    margin-top: 30px;
+}
+
+.judul {
+    font-size: 24px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+.ket {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 0px;
+}
+
+
+/* Our Services */
+
+
+/* Why us */
+
+.wu {
+    margin-top: 120px;
+}
+
+.judul2 {
+    font-size: 24px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.ket2 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.kartu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 45px;
+}
+
+.kartu h5 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0px;
+}
+
+.kartu p {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+
+/* Why us */
+
+
+/* Testimonial */
+
+.testimonial {
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.judul3 {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.ket3 {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.img-text {
+    width: 100%;
+    height: 270px;
+    display: block;
+    padding-left: 130px;
+    padding-top: 45px;
+    background: #F1F3FF;
+    border-radius: 8px;
+}
+
+.img-text .star {
+    color: #F9CC00;
+    width: 16px;
+    height: 16px;
+}
+
+.img-text h2 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.img-text p {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.single-box {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    float: right;
+}
+
+.img-area {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: 100px;
+    left: 25px;
+}
+
+.img-area img {
+    width: 100%;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel-indicators .active {
+    background: #5CB85F;
+    color: white;
+    border-color: #5CB85F;
+}
+
+.btn-carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-control {
+    background: #5CB85F;
+    width: 33px;
+    height: 33px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel button {
+    border-radius: 100%;
+    margin: 5px 10px;
+}
+
+.tombol-crsl {
+    width: 15px;
+    height: 15px;
+}
+
+.visually-hidden {
+    color: #000000;
+}
+
+
+/* Testimonial */
+
+
+/* Order */
+
+.order {
+    background: #0D28A6;
+    border-radius: 13px;
+}
+
+.order h1 {
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.order p {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.btn-sewa {
+    background: #5CB85F;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    margin: 50px auto;
+}
+
+
+/* Order */
+
+
+/* FAQ */
+
+.faq {
+    margin: 100px auto;
+}
+
+.faq h1 {
+    color: #000000;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.faq p {
+    color: #000000;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.mainmenubtn {
+    background: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 10px auto;
+    width: 652px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainmenubtn a {
+    color: #000000;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+.mainmenubtn img {
+    margin-right: 15px;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 5px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #D4D4D4;
+    box-sizing: border-box;
+    width: 652px;
+}
+
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+
+/* FAQ */
+
+
+/* Footer */
+
+.footer {
+    margin-bottom: 80px;
+}
+
+.kontak,
+.social-media,
+.copyright {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.bagian {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+
+/* Footer */
