@@ -15,70 +15,101 @@
 <body>
     <!-- Navbar -->
     <header>
-        <nav class="navbar navbar-light bg-putih">
-            <div class="container navigasi">
-                <img class="logobiru" src="assets/logo/logo.png" alt="logo">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#our-services">Our Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#why-us">Why Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonial">Testimonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
-                    </li>
-                    <button type="button" class="btn btn-ijo">Register</button>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-putih">
+            <div class="container-fluid">
+                <img src="./assets/logo/logo.png" class="logobiru" alt="logo biru">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-services">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#why-us">Why Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <button type="button" class="btn btn-ijo btn-reg">Register</button>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <!-- Navbar -->
 
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">BCR</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#our-services">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#why-us">Why Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <button type="button" class="btn btn-ijo btn-reg-offcanvas" style="width: 90px;">Register</button>
+            </ul>
+        </div>
+    </div>
+    <!-- offcanvas-end -->
+
     <!-- Header -->
-    <main>
-        <section class="container-fluid section">
-            <div class="pembuka">
-                <div class="bio">
+    <section class="container-fluid section">
+        <div class="row pembuka">
+            <div class="col-lg-5 bio" style="display:flex; justify-content: center; padding-right: 0px; padding-left: 0px;">
+                <div style="margin-left: 8%;">
                     <div>
-                        Sewa & Rental Mobil Terbaik di</br>
-                        kawasan Bekasi
+                        Sewa & Rental Mobil Terbaik di kawasan Bekasi
                     </div>
                     <div class="ucapan">
                         Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas</br>
                         terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu </br>
                         untuk sewa mobil selama 24 jam.
                     </div>
-                    <button type="button" class="btn btn-ijo">Mulai Sewa Mobil</button>
+                    <button type="button" class="btn btn-ijo btn-msm">Mulai Sewa Mobil</button>
                 </div>
-                <img src="assets/img/img_car.svg" alt="mobil">
             </div>
-        </section>
-    </main>
+            <div class="col-lg-7 mobil" style="display: flex; justify-content: end;">
+                <img src="assets/img/img_car.svg" alt="mobil" class="gmbr">
+            </div>
+        </div>
+    </section>
     <!-- Header -->
 
     <!-- Our Services -->
     <main>
         <div id="our-services" class="container-fluid">
-            <div class="row">
-                <div class="col-6 service">
+            <div class="row our-service">
+                <div class="col-md-7 service">
                     <img src="assets/img/img_service.svg" alt="gambar">
                 </div>
-                <section class="col-6 bio2">
+                <div class="col-md-5 bio2">
                     <div class="judul">
-                        Best Car Rental for any kind of trip in</br>
-                        Bekasi!
+                        Best Car Rental for any kind of trip in Bekasi!
                     </div>
                     <div class="ket">
                         Sewa mobil di Bekasi bersama Binar Car Rental jaminan harga lebih</br>
                         murah dibandingkan yang lain, kondisi mobil baru, serta kualitas</br>
                         pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.
+                        <img src="assets/img/Frame 105.svg" alt="">
                     </div>
-                    <img src="assets/img/Frame 105.svg" alt="">
-                </section>
+                </div>
             </div>
         </div>
     </main>
@@ -97,32 +128,34 @@
                     </div>
                 </section>
                 <div class="kartu">
-                    <div class="col-3 card" style="width: 260px;">
-                        <div class="card-body">
-                            <img src="assets/img/icon_complete.svg" alt="jempol">
-                            <h5 class="card-title">Mobil Lengkap</h5>
-                            <p class="card-text">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+                    <div class="row wus" style="display: flex; justify-content: center;">
+                        <div class="col-md-3 card why-us">
+                            <div class="card-body">
+                                <img src="assets/img/icon_complete.svg" alt="jempol">
+                                <h5 class="card-title">Mobil Lengkap</h5>
+                                <p class="card-text">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-3 card" style="width: 260px;">
-                        <div class="card-body">
-                            <img src="assets/img/icon_price.png" alt="">
-                            <h5 class="card-title">Harga Murah</h5>
-                            <p class="card-text">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
+                        <div class="col-md-3 card why-us">
+                            <div class="card-body">
+                                <img src="assets/img/icon_price.png" alt="">
+                                <h5 class="card-title">Harga Murah</h5>
+                                <p class="card-text">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-3 card" style="width: 260px;">
-                        <div class="card-body">
-                            <img src="assets/img/icon_24hrs.png" alt="">
-                            <h5 class="card-title">Layanan 24 Jam</h5>
-                            <p class="card-text">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
+                        <div class="col-md-3 card why-us">
+                            <div class="card-body">
+                                <img src="assets/img/icon_24hrs.png" alt="">
+                                <h5 class="card-title">Layanan 24 Jam</h5>
+                                <p class="card-text">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-3 card" style="width: 260px;">
-                        <div class="card-body">
-                            <img src="assets/img/icon_professional.svg" alt="">
-                            <h5 class="card-title">Sopir Profesional</h5>
-                            <p class="card-text">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
+                        <div class="col-md-3 card why-us">
+                            <div class="card-body">
+                                <img src="assets/img/icon_professional.svg" alt="">
+                                <h5 class="card-title">Sopir Profesional</h5>
+                                <p class="card-text">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,41 +181,47 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-md-4 hilang uktablet">
                                                 <div class="single-box">
                                                     <div class="img-area">
                                                         <img src="assets/img/img_photo (1).svg" alt="">
                                                     </div>
                                                     <div class="img-text">
-                                                        <p class="star">&starf;&starf;&starf;&starf;&starf;</p>
-                                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                                                            elit, sed do eiusmod”
-                                                        </p>
-                                                        <h2>John Dee 32, Bromo</h2>
+                                                        <div class="isi-img-text">
+                                                            <p class="star">&starf;&starf;&starf;&starf;&starf;</p>
+                                                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                elit, sed do eiusmod”
+                                                            </p>
+                                                            <h2>John Dee 32, Bromo</h2>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-md-4 selalu-ada">
                                                 <div class="single-box">
                                                     <div class="img-area"> <img src="assets/img/img_photo.svg" alt=""> </div>
                                                     <div class="img-text">
-                                                        <p class="star">&starf;&starf;&starf;&starf;&starf;</p>
-                                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                                                            elit, sed do eiusmod”
-                                                        </p>
-                                                        <h2>John Dee 32, Bromo</h2>
+                                                        <div class="isi-img-text">
+                                                            <p class="star">&starf;&starf;&starf;&starf;&starf;</p>
+                                                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                elit, sed do eiusmod”
+                                                            </p>
+                                                            <h2>John Dee 32, Bromo</h2>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-md-4 hilang ">
                                                 <div class="single-box">
                                                     <div class="img-area"> <img src="assets/img/img_photo (1).svg" alt=""> </div>
                                                     <div class="img-text">
-                                                        <p class="star">&starf;&starf;&starf;&starf;&starf;</p>
-                                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                                                            elit, sed do eiusmod”
-                                                        </p>
-                                                        <h2>John Dee 32, Bromo</h2>
+                                                        <div class="isi-img-text">
+                                                            <p class="star">&starf;&starf;&starf;&starf;&starf;</p>
+                                                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                elit, sed do eiusmod”
+                                                            </p>
+                                                            <h2>John Dee 32, Bromo</h2>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -190,39 +229,45 @@
                                     </div>
                                     <div class="carousel-item">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-md-4 hilang uktablet">
                                                 <div class="single-box">
                                                     <div class="img-area"> <img src="assets/img/img_photo.svg" alt=""> </div>
                                                     <div class="img-text">
-                                                        <p class="star">&starf;&starf;&starf;&starf;&starf;</p>
-                                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                                                            elit, sed do eiusmod”
-                                                        </p>
-                                                        <h2>John Dee 32, Bromo</h2>
+                                                        <div class="isi-img-text">
+                                                            <p class="star">&starf;&starf;&starf;&starf;&starf;</p>
+                                                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                elit, sed do eiusmod”
+                                                            </p>
+                                                            <h2>John Dee 32, Bromo</h2>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-md-4 selalu-ada">
                                                 <div class="single-box">
                                                     <div class="img-area"> <img src="assets/img/img_photo (1).svg" alt=""> </div>
                                                     <div class="img-text">
-                                                        <p class="star">&starf;&starf;&starf;&starf;&starf;</p>
-                                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                                                            elit, sed do eiusmod”
-                                                        </p>
-                                                        <h2>John Dee 32, Bromo</h2>
+                                                        <div class="isi-img-text">
+                                                            <p class="star">&starf;&starf;&starf;&starf;&starf;</p>
+                                                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                elit, sed do eiusmod”
+                                                            </p>
+                                                            <h2>John Dee 32, Bromo</h2>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-md-4 hilang">
                                                 <div class="single-box">
                                                     <div class="img-area"> <img src="assets/img/img_photo.svg" alt=""> </div>
                                                     <div class="img-text">
-                                                        <p class="star">&starf;&starf;&starf;&starf;&starf;</p>
-                                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                                                            elit, sed do eiusmod”
-                                                        </p>
-                                                        <h2>John Dee 32, Bromo</h2>
+                                                        <div class="isi-img-text">
+                                                            <p class="star">&starf;&starf;&starf;&starf;&starf;</p>
+                                                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                elit, sed do eiusmod”
+                                                            </p>
+                                                            <h2>John Dee 32, Bromo</h2>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -248,7 +293,7 @@
 
     <!-- order -->
     <main>
-        <div class="container order">
+        <div class="container order mt-5">
             <div class="row">
                 <div class="col-12">
                     <h1>Sewa Mobil di Bekasi Sekarang</h1>
@@ -265,11 +310,11 @@
     <footer>
         <div id="faq" class="container faq">
             <div class="row">
-                <div class="col-5">
+                <div class="col-md-5">
                     <h1>Frequently Asked Question</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
-                <div class="col-7">
+                <div class="col-md-7">
                     <div class="dropdown">
                         <button class="mainmenubtn">
                             <a>Apa saja syarat yang dibutuhkan?</a>
@@ -333,12 +378,12 @@
         <!-- Footer -->
         <div class="container footer">
             <div class="row">
-                <div class="col-md-4 kontak">
+                <div class="col-md-3 kontak">
                     <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
                     <p>binarcarrental@gmail.com</p>
                     <p>081-233-334-808</p>
                 </div>
-                <div class="col-md-2 bagian">
+                <div class="col-md-3 bagian">
                     <p>Our services</p>
                     <p>Why Us</p>
                     <p>Testimonial</p>
@@ -352,7 +397,7 @@
                         <img src="assets/logo/icon_mail.svg" alt="mail">
                         <img src="assets/logo/icon_twitch.svg" alt="th"></i>
                 </div>
-                <div class="col-sm-3 copyright">
+                <div class="col-md-3 copyright">
                     <p>Copyright Binar 2022</p>
                     <img src="assets/logo/logo.png" alt="logo">
                 </div>
