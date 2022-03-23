@@ -1,8 +1,6 @@
 /* Body */
 
 * {
-    padding: 0%;
-    margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: none;
@@ -28,12 +26,12 @@ body {
     padding-top: 20px;
 }
 
-.navigasi {
-    padding-left: 2px;
+.logobiru {
+    margin-left: 3%;
 }
 
-.navigasi button {
-    margin-left: 15px;
+.navbar-nav {
+    margin-right: 3%;
 }
 
 nav ul li a {
@@ -45,7 +43,7 @@ nav ul li a {
 }
 
 .nav-link {
-    color: #000000;
+    color: #000000 !important;
 }
 
 .btn-ijo {
@@ -54,8 +52,26 @@ nav ul li a {
     border-radius: 3px;
 }
 
+.btn-reg {
+    margin-left: 20px;
+}
+
 
 /* Navigation-bar */
+
+
+/* offcanvas */
+
+#offcanvasRightLabel {
+    font-weight: 650;
+}
+
+.btn-reg-offcanvas {
+    margin-top: 10px;
+}
+
+
+/* offcanvas-end */
 
 
 /* Header */
@@ -66,27 +82,32 @@ nav ul li a {
     text-align: left;
     justify-content: left;
     align-items: center;
-    padding-right: 0px;
+    padding-right: 0%;
 }
 
 .pembuka {
+    width: 100%;
     display: flex;
-    padding-right: 0px;
 }
 
 .pembuka img {
     margin-top: 50px;
+}
+
+.mobil {
     padding-right: 0px;
+}
+
+.gmbr {
+    width: 80%;
 }
 
 .bio {
     font-size: 36px;
-    margin-top: 120px;
-    margin-left: 91px;
-    margin-right: 0px;
     font-family: Helvetica;
     font-style: normal;
     font-weight: bold;
+    flex-direction: column;
 }
 
 .bio button {
@@ -102,6 +123,10 @@ nav ul li a {
     margin-top: 20px;
 }
 
+.btn-msm {
+    padding: 8px 12px !important;
+}
+
 
 /* Header */
 
@@ -110,22 +135,26 @@ nav ul li a {
 
 .service {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-service {
+    margin-top: 5rem;
 }
 
 .service img {
-    margin-top: 120px;
-    margin-left: 150px;
+    width: 55%;
 }
 
 .bio2 {
-    margin-top: 180px;
-    justify-content: flex-end;
-    padding: 0px;
-    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .bio2 img {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .judul {
@@ -133,7 +162,6 @@ nav ul li a {
     font-family: Helvetica;
     font-style: normal;
     font-weight: bold;
-    margin-right: 0px;
 }
 
 .ket {
@@ -142,7 +170,7 @@ nav ul li a {
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-    margin-right: 0px;
+    margin-top: 20px;
 }
 
 
@@ -153,6 +181,12 @@ nav ul li a {
 
 .wu {
     margin-top: 120px;
+}
+
+.why-us {
+    width: 270px;
+    height: 182px;
+    margin: auto 7px;
 }
 
 .judul2 {
@@ -173,7 +207,7 @@ nav ul li a {
 
 .kartu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     align-items: flex-start;
     margin-top: 45px;
@@ -198,6 +232,45 @@ nav ul li a {
     order: 2;
     flex-grow: 0;
     margin: 16px 0px;
+}
+
+@media (min-width:1400px) {
+    .judul2,
+    .ket2 {
+        margin-left: 7%;
+    }
+}
+
+@media (max-width:1199px) {
+    .judul2,
+    .ket2 {
+        margin-left: 6%;
+    }
+}
+
+@media (max-width:991px) {
+    .judul2,
+    .ket2 {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width:767px) {
+    .judul2,
+    .ket2 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    .wus {
+        display: flex;
+        justify-content: center;
+    }
+    .why-us {
+        margin-bottom: 18px;
+    }
 }
 
 
@@ -239,10 +312,13 @@ nav ul li a {
     width: 100%;
     height: 270px;
     display: block;
-    padding-left: 130px;
     padding-top: 45px;
     background: #F1F3FF;
     border-radius: 8px;
+}
+
+.isi-img-text {
+    margin-left: 100px;
 }
 
 .img-text .star {
@@ -272,7 +348,6 @@ nav ul li a {
     position: relative;
     margin-bottom: 30px;
     display: flex;
-    float: right;
 }
 
 .img-area {
@@ -280,7 +355,7 @@ nav ul li a {
     width: 80px;
     height: 80px;
     margin-top: 100px;
-    left: 25px;
+    margin-left: 10px;
 }
 
 .img-area img {
@@ -326,6 +401,47 @@ nav ul li a {
     color: #000000;
 }
 
+@media (max-width:480px) {
+    .hilang {
+        display: none;
+    }
+    .img-area {
+        margin-left: 4%;
+    }
+    .isi-img-text {
+        margin-left: 115px;
+    }
+}
+
+@media (min-width:490px) and (max-width:767px) {
+    .hilang {
+        display: none;
+    }
+    .img-area {
+        margin-left: 4%;
+    }
+    .isi-img-text {
+        margin-top: 20px;
+        margin-left: 115px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1190px) {
+    .hilang {
+        display: none;
+    }
+    .selalu-ada {
+        width: 100% !important;
+    }
+    .img-area {
+        margin-left: 4%;
+    }
+    .isi-img-text {
+        margin-left: 16%;
+        margin-top: 30px;
+    }
+}
+
 
 /* Testimonial */
 
@@ -333,6 +449,7 @@ nav ul li a {
 /* Order */
 
 .order {
+    width: 90%;
     background: #0D28A6;
     border-radius: 13px;
 }
@@ -387,6 +504,7 @@ nav ul li a {
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
+    margin-top: 10px;
 }
 
 .faq p {
@@ -404,7 +522,7 @@ nav ul li a {
     box-sizing: border-box;
     border-radius: 4px;
     margin: 10px auto;
-    width: 652px;
+    width: 80%;
     height: 56px;
     display: flex;
     align-items: center;
@@ -422,10 +540,6 @@ nav ul li a {
     margin: 0px 15px;
 }
 
-.mainmenubtn img {
-    margin-right: 15px;
-}
-
 .dropdown-child {
     display: none;
     background-color: #ffffff;
@@ -438,7 +552,8 @@ nav ul li a {
     cursor: pointer;
     border: 1px solid #D4D4D4;
     box-sizing: border-box;
-    width: 652px;
+    width: 80%;
+    margin: 10px auto;
 }
 
 .dropdown-child a {
@@ -480,6 +595,21 @@ nav ul li a {
     font-size: 14px;
     line-height: 20px;
     color: #000000;
+}
+
+@media(min-width:769px) {
+    .kontak {}
+    .bagian {}
+}
+
+@media (max-width:768px) {
+    .kontak,
+    .social-media,
+    .copyright {}
+    .bagian {}
+    .social-media img {
+        margin-bottom: 15px;
+    }
 }
 
 
