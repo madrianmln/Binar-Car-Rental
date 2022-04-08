@@ -614,3 +614,48 @@ nav ul li a {
 
 
 /* Footer */
+
+/* cars.html */
+
+#cari-mobil{
+    margin-bottom: 30px;
+}
+
+.fotomobil-card{
+    height: 222px;
+    object-fit: cover;
+}
+
+.card-mobil h5{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card-mobil h2{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card-mobil p{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.detail-item{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* cars.html */
